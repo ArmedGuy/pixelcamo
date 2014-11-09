@@ -19,8 +19,9 @@ First it splits each byte up into the first 4 bits, and last 4 bits (which allow
 This causes the pixelcamo-encoded version of the data to be twice the size.
 
 
-#### Step 2 - Pixel pattern
+#### Step 2 - pixel pattern
 This step is up to the implementing program to decide. The main goal is to determine the frequency of data inside an image. (I.e. to use every second pixel as a data-pixel)
+The denser the data-pixels are stored, the more data can be stored in an image, BUT it also affects the visual look of the image more. (obviously)
 
 
 #### Step 3 - masking
