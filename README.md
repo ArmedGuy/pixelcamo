@@ -1,8 +1,8 @@
 # pixelcamo
-Encode and mask data inside pixels
+Encode and mask data inside images.
 
 
-This is concept code at the moment. Alpha-level stuff.
+(WARNING: This is concept code at the moment. Alpha-level stuff yo.)
 
 
 ##### Wordlist
@@ -67,8 +67,8 @@ print bdata
 print pxenc
 # Outputs: [4, 8, 6, 5, 6, 12, 6, 12, 6, 15, 2, 0, 7, 7, 6, 15, 7, 2, 6, 12, 6, 4]
 
-# Now, the encoded data can be inserted inside an image.
-# For the example, we will just use the first three values of the encoded data
+# Now the encoded data can be inserted inside an image.
+# For the example, we will just use the first three values of the encoded data.
 
 adjPixel = (231, 53, 67) # RGB of the adjacent pixel we want to look like
 
