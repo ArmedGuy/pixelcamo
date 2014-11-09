@@ -56,6 +56,7 @@ print rgb
 ```
 
 To compare, the adjacent pixel on the left, and the data-pixel on the right.
+
 <img src="http://placehold.it/150x150/E73543/FFFFFF&text=%28231,+53,+67%29" alt="" />
 <img src="http://placehold.it/150x150/E43846/FFFFFF&text=%28228,+56,+70%29" alt="" />
 
