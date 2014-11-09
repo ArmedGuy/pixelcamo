@@ -28,16 +28,16 @@ Pixelcamo masks data by using the rgb-value of an adjacent pixel, and letting th
 This is made possible by the pixelcamo-encoded data, which makes any r,g or b value to *always* be within 16 digits of the adjacent pixel, and therefor have a color similar, and sometimes exactly the same.
 
 ##### Laying the camo-net - the net(d1, p1) function
-To encode data for the red channel of a pixel, we declare the variable `d1` (our encoded data-value, a number between 0 and 15), and `r1` which is the red channel of our adjacent pixel.
-The result is stored as `r2`, the value for the red channel of the data-pixel.
+To encode data for the red channel of a pixel, we declare the variable `d1` (our encoded data-value, a number between 0 and 15), and `p1` which, in this case, is the red channel of our adjacent pixel.
+The resulting integer is what becomes the red channel for our data-pixel.
 
 We simply divide the red channel into 16 different sections, and transform the data-value to be within the same section. This gives us `abs(r2 - r1) < 16` which allows us to store data, while retaining similar colors.
 ```
->>> r1 = 123
+>>> p1 = 123
 >>> d1 = 12
->>> section = math.floor(r1 / 16.0)
->>> r2 = int(16 * section + d1)
->>> r2
+>>> section = math.floor(p1 / 16.0)
+>>> result = int(16 * section + d1)
+>>> result
 124
 ```
 
