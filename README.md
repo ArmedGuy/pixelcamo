@@ -70,7 +70,7 @@ print pxenc
 # Now the encoded data can be inserted inside an image.
 # For the example, we will just use the first three values of the encoded data.
 
-adjPixel = (231, 53, 67) # RGB of the adjacent pixel we want to look like
+adjPixel = (231, 53, 67) # RGB of the adjacent pixel we want our data-pixel to look like
 
 rgb = pixelcamo.camo(pxenc[0], pxenc[1], pxenc[2], adjPixel) # rgb value of the data-pixel.
 
