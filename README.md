@@ -76,6 +76,9 @@ rgb = pixelcamo.camo(pxenc[0], pxenc[1], pxenc[2], adjPixel) # rgb value of the 
 
 print rgb
 # Outputs: (228, 56, 70)
+
+print pixelcamo.uncamo(rgb, adjPixel) # unmask the values
+# Outputs: (4, 8, 6)
 ```
 
 To compare, the adjacent pixel on the left, and the data-pixel on the right.
